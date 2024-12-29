@@ -1,6 +1,6 @@
 import React from 'react'
 import { logo } from './constant'
-import { FaHome, FaUser, FaPhone, FaChevronCircleLeft, FaAngleDoubleLeft } from 'react-icons/fa'
+import {FaAngleDoubleLeft } from 'react-icons/fa'
 function Nav() {
   return (
     <nav className='h-screen w-[350px] border-r p-4 relative'>
