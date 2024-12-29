@@ -11,7 +11,7 @@ function Section2() {
             All the skills you need in one place
           </h1>
           <p className="text-sm font-light text-center leading-6">
-            From critical skills to technical topics, Udemy supports your
+            From critical skills to technical topics, LearnoPedia supports your
             professional development.
           </p>
         </div>
