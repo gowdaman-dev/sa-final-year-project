@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         <meta name="google-site-verification" content="Xvv4D0BqdFd8zWaR7XdzPiQRt9AKk_6rKdo1E__tBF8" />
       </head>
-      <body className={`${defaultFont.className} antialiased`}>
+      <body className={`${defaultFont.className} antialiased w-screen overflow-x-hidden`}>
         <NavBar />
         <Banner />
-        <div className="xl:w-11/12 lg:px-[3rem] px-4 mx-auto">{children}</div>
+        {children}
       </body>
     </html>
   );
