@@ -1,15 +1,11 @@
-import localFont from "next/font/local";
+import {Jost} from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/common/NavBar";
+import Banner from "@/components/common/Banner";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+export const defaultFont = Jost({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -24,8 +20,10 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${defaultFont.className} antialiased`}
       >
+        <NavBar/>
+        <Banner/>
         {children}
       </body>
     </html>
